@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'GOLD';
+    src: url('../fuentes/TT\ Interphases\ Pro\ Trial\ Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GOLD';
+    src: url('../fuentes/TT\ Interphases\ Pro\ Trial\ DemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GOLD';
+    src: url('../fuentes/TT\ Interphases\ Pro\ Trial\ Bold.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+/* Mantén el estilo del enlace sin subrayado y con el mismo color */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Color al pasar el mouse sobre "Mi cuenta" y "ES" */
+.cuenta:hover, .es:hover, .menu_unido li a:hover {
+    color: #FFFF00;
+}
+
+/* Estilo general */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background-color: hsl(54, 31%, 51%);
+    height: 70px;
+    display: flex; /* Hace que el menú y login estén en la misma línea */
+    justify-content: space-between; /* Separa el menú a la izquierda y login a la derecha */
+    align-items: center; /* Centra verticalmente los elementos dentro del header */
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+
+}
+
+.menu_unido {
+    box-sizing: border-box;
+    height: 70px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.menu_unido li {
+    list-style: none;
+    display: inline;
+    padding: 0 25px 0px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+    
+}
+
+.cuenta {
+    padding-right: 10px;
+}
+
+.cuenta, .es {
+    font-size: 11px;
+    font-family:  Arial, sans-serif;
+}
+
+.user {
+    width: 45px;
+    height: 45px;
+}
+
+.flecha {
+    padding-right: 1px;
+}
+
+.bandera {
+    height: 31px;
+    width: 38px;
+}
+
+/* Fondo e imagen principal */
+.Fondo {
+    position: relative;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Texto superpuesto sobre la imagen */
+.overlay-texto {
+    position: absolute;
+    top: 23%; /* Ajusta la posición vertical */
+    left: 13%; /* Posiciona el texto hacia la izquierda */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: black;
+    padding-left: 0px;
+}
+
+.spa {
+    font-size: 96px;
+    font-family: 'Romanesco', cursive;
+    font-weight: 400;
+}
+
+.descripcion {
+    margin-top: 20px;
+    width: 55%;
+    font-size: 32px; /* Tamaño para Título 2 */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* SemiBold */
+}
+
+/*Reserva ahora*/
+
+.cita{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 100px;
+
+
+}
+
+.reserva-texto{
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+.cod-texto{
+    padding-right: 20px;
+}
+
+.codigo{
+    border: 0px;
+    color:#383838;
+    padding-left: 20px;
+}
+
+/* Quitar el borde negro */
+.codigo:focus {
+    outline: none; /* Elimina el borde negro */
+    border: 1px solid #b5b5b4; /* Cambia el color del borde cuando está en foco */
+    /* Puedes ajustar el color (#A3A656) o el grosor del borde (2px) según desees */
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.codigo::placeholder {
+    color: hsla(0, 0%, 50%, 0.5); /* Gris con 50% de transparencia */
+}
+
+/*Tarjetas*/
+
+.masajes{
+display: flex;
+padding-top: 100px;
+padding-left: 110px;
+padding-bottom: 100px;
+}
+.pies, .relajante ,.bambu{
+    padding: 0px 134px 0px 0px;
+}
+
+.masajes_pies , .masajes_relajantes , .masajes_bambu{
+    background-color: hsl(54, 31%, 51%);
+    padding: 20px;
+    font-size: 32px; /* Tamaño para Título 2 */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* SemiBold */
+    color: #fff;
+    margin: 0px;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.descripcion_relajante, .descripcion_pies, .descripcion_bambu{
+    width: 90%;
+    padding-left: 0.5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.precio{
+    font-size: 35px;
+    margin: 0px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 16px;
+    height: 35px;
+
+}
+.Reservar{
+    background-color: hsl(54, 31%, 51%);
+    margin-left: 38%;
+    padding: 11px 28px;
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 14px 30px;
+}
+.Reservar:hover{
+    background-color:#384001;
+}
+
+.pre_res{
+    display: flex;
+}
+
+.socio {
+    display: flex; /* Alinea las tarjetas en fila */
+    justify-content: space-between; /* Espacio uniforme entre las tarjetas */
+    box-sizing: border-box;
+    padding-left: 200px;
+}
+
+.socio_t{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 80px;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    font-size: 35px;
+
+}
+
+.imagen{
+    display: flex;
+    border: 11px solid #384001;
+    padding: 30px;
+    border-radius: 50%;
+    margin-left:10px ;
+    height: 180px;
+    width: 180px;
+    align-items: center;
+}
+.img_s{
+    padding: 5px 10px 5px 30px;
+    height: 140px;
+    width: 125px;
+}
+
+.img_plata{
+    opacity: 1;
+}
+
+.titulo_s{
+    font-size: 33px; /* Tamaño*/
+    font-family: 'GOLD';
+    font-weight: 400; /* SemiBold */
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+}
+
+.condiciones{
+    background-color: hsl(54, 31%, 51%);
+    padding: 11px 2px;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 20px 70px;
+    margin-right: 90px;
+}
+
+.condiciones:hover{
+    background-color:#384001;
+}
+.beneficios{
+    padding-top: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 100px;
+}
+
+.socioG{
+    height: 770px;
+}
+li{
+    padding-bottom: 10px;
+}
+
+.footer{
+    background-color:hsl(58,80%,15%);
+    display: flex; 
+    height: 97px;
+    width: 100%;   
+}
+
+.politicas{
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 100px;
+}
+.letras_footer{
+    color: hsl(50,30%,47%);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding-right: 90px;
+}
+
+.letras_footer:hover{
+    color: #FFFF00;
+}
+
+.siguenos{
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+}
+.img_footer:hover{
+    color: #FFFF00;
+}
+.img_footer{
+    color: hsl(50,30%,47%);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding-right: 35px;
+}
+
+
